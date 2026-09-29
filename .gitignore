@@ -1,0 +1,12 @@
+# Build output (terminal + CLion)
+build/
+cmake-build-*/
+
+# Editor / tools
+.idea/
+.claude/
+CLAUDE.md
+.DS_Store
+
+# Local docs (plan, notes)
+docs/
