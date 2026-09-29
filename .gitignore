@@ -4,6 +4,7 @@ cmake-build-*/
 
 # Editor / tools
 .idea/
+.cache/
 .claude/
 CLAUDE.md
 .DS_Store
