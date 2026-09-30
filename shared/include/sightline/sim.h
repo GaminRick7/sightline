@@ -8,6 +8,10 @@ namespace sightline {
 
 inline constexpr float kMoveSpeed = 6.75f;  // tiles per second
 
+// Must stay above kMoveSpeed * dt (0.21 tiles at 32 Hz), or a player can pass through a wall
+// corner in one tick.
+inline constexpr float kPlayerRadius = 0.35f;  // tiles
+
 // Tick 0 of a match: players_per_team players on each team, on spawn tile centres,
 // facing the enemy team's first spawn. Ids are A's first, then B's.
 // Throws std::runtime_error if the count doesn't fit kMaxPlayers or a team lacks spawns.
