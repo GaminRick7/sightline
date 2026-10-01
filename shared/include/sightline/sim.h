@@ -12,6 +12,10 @@ inline constexpr float kMoveSpeed = 6.75f;  // tiles per second
 // corner in one tick.
 inline constexpr float kPlayerRadius = 0.35f;  // tiles
 
+inline constexpr float kFireInterval = 0.1f;  // seconds between shots while fire is held (10/s)
+inline constexpr int kShotDamage = 25;        // 4 hits from full health
+inline constexpr float kRoundOverSeconds = 3.0f;
+
 // Tick 0 of a match: players_per_team players on each team, on spawn tile centres,
 // facing the enemy team's first spawn. Ids are A's first, then B's.
 // Throws std::runtime_error if the count doesn't fit kMaxPlayers or a team lacks spawns.

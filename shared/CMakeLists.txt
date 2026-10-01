@@ -1,6 +1,7 @@
 add_library(sightline_shared STATIC
     src/config.cpp
     src/map.cpp
+    src/raycast.cpp
     src/sim.cpp
 )
 
